@@ -15,7 +15,8 @@ YOU MUST FOLLOW THESE OUTPUT RULES:
 2. DO NOT write explanations.
 3. DO NOT write markdown.
 4. DO NOT write section headers unless inside JSON fields.
-5. The JSON schema MUST be:
+5. MUST follow the format rules for the bullet points. Ensure that the format rules are being follow EXACTLY.
+6. The JSON schema MUST be:
 
 {{
     "title": "string",
