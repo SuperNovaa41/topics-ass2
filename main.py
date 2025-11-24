@@ -1,13 +1,28 @@
 from ollama import chat
-from ollama import ChatResponse
+import json
 
-response: ChatResponse = chat(model='gemma3:270m', messages=[
-    {
-        'role': 'user',
-        'content': 'Why is the sky blue?',
-    },
-])
+with open("rules.json") as f:
+    sys_rules = json.load(f)
 
-print(response['message']['content'])
+sys_prompt = f"""
+You are a patch-note writer. Follow the rules in this JSON object exactly:
 
-#print(response.message.content)
+{json.dumps(sys_rules, indent=2)}
+"""
+
+user_prompt = """
+- added a crazy new game
+- fixed an issue with users not being able to login
+- removed all admins
+"""
+
+
+response = chat(
+        model='llama3.1:8b',
+        messages=[
+            {'role': 'system', 'content': sys_prompt},
+            {'role': 'user', 'content': user_prompt}
+        ]
+)
+
+print(response.message['content'])

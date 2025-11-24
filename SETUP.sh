@@ -11,6 +11,6 @@ fi
 
 echo "Installing required model..."
 
-ollama pull gemma3:270m
+ollama pull llama3.1:8b
 
 echo "Successfully installed model!"

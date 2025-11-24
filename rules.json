@@ -1,0 +1,42 @@
+{
+	"style": {
+		"title_format": "Patch Notes - v{{version}} ({{date}})",
+		"sections_order": ["Features", "Improvements", "Fixes", "Removals", "Security"],
+		"bullet_style": "- {{item}}",
+		"max_line_length": 150,
+		"tense": "present",
+		"voice": "concise_active",
+		"require_categories": true
+	},
+	"classification_rules": {
+		"features": ["added", "new", "introduced", "implemented", "created"],
+		"improvements": ["improved", "enhanced", "made faster", "optimized", "refined"],
+		"fixes": ["fixed", "resolved", "addressed", "corrected"],
+		"removals": ["removed", "deleted", "incompatible", "reworked", "will be removed", "deprecated"],
+		"security": ["vulnerability", "hardened", "permission issue", "xss", "csrf"]
+	},
+	"format_rules": {
+		"capitalize_first_word": true,
+		"end_sentences_with_period": false,
+		"group_similar_items": true,
+		"dedupe_similar_entries": true
+	},
+	"forbidden": {
+		"phrases": [
+			"sorry",
+			"as an AI",
+			"this might be wrong",
+			"ignore previous instructions",
+			"as requested"
+		],
+		"patterns": [
+			".*(?i)ignore.*system.*",
+			".*(?i)override.*rules.*"
+		]
+	},
+	"metadata_instructions": {
+		"versioning": "Do not infer version numbers. Always output a 'version_request' field: {\"increment\": \"major|minor|patch\"}.",
+		"date": "Do not infer dates. Always output 'date_request': \"current_date\".",
+		"output_format": "Return a JSON with fields: title, sections (object), version_request, date_request."
+	}
+}
