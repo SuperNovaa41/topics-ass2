@@ -10,9 +10,9 @@
 	},
 	"classification_rules": {
 		"features": ["added", "new", "introduced", "implemented", "created"],
-		"improvements": ["improved", "enhanced", "made faster", "optimized", "refined", "updated", "updates", "update"],
+		"improvements": ["improved", "enhanced", "made faster", "optimized", "refined", "updated", "updates", "update", "reworked", "tweaked"],
 		"fixes": ["fixed", "resolved", "addressed", "corrected"],
-		"removals": ["removed", "deleted", "incompatible", "reworked", "will be removed", "deprecated"],
+		"removals": ["removed", "deleted", "incompatible", "will be removed", "deprecated"],
 		"security": ["vulnerability", "hardened", "permission issue", "xss", "csrf"]
 	},
 	"format_rules": {

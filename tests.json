@@ -1,0 +1,62 @@
+{
+	"1": {
+		"input": "- added new leaderboard animations\n- fixed crash when opening settings",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[\"Added new leaderboard animations\"],\"Improvements\":[],\"Fixes\":[\"Fixed crash when opening settings\"],\"Removals\":[],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"2": {
+		"input": "- reworked the crafting interface\n- improved shader loading times\n- removed deprecated camera modes",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[],\"Improvements\":[\"Reworked the crafting interface\",\"Improved shader loading times\"],\"Fixes\":[],\"Removals\":[\"Removed deprecated camera modes\"],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"3": {
+		"input": "- optimized enemy AI pathfinding\n- added two new difficulty presets\n- reworked potion effects\n- fixed rare bug causing infinite loading screens",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[\"Added two new difficulty presets\"],\"Improvements\":[\"Optimized enemy AI pathfinding\",\"Reworked potion effects\"],\"Fixes\":[\"Fixed rare bug cuasing infinite loading screens\"],\"Removals\":[],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"4": {
+		"input": "- updated localization files for French\n- reworked tutorial level flow",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[],\"Improvements\":[\"Updated localization files for French\",\"Reworked tutorial level flow\"],\"Fixes\":[],\"Removals\":[],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"5": {
+		"input": "- removed unused assets from build\n- fixed UI scaling on ultrawide monitors\n- added option to disable motion blur",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[\"Added option to disable motion blur\"],\"Improvements\":[],\"Fixes\":[\"Fixed UI scaling on ultrawide monitors\"],\"Removals\":[\"Removed unused assets from build\"],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"6": {
+		"input": "- reworked item rarity system\n- added missing sound effects to combat\n- improved keyboard navigation in menus\n- tweaked fog density in mountains\n- fixed double-jump exploit",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[\"Added missing sound effects to combat\"],\"Improvements\":[\"Reworked item rarity system\",\"Improved keyboard navigation in menus\",\"Tweaked fog density in mountains\"],\"Fixes\":[\"Fixed double-jump exploit\"],\"Removals\":[],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"7": {
+		"input": "- added offline mode\n- optimized network sync for co-op\n- removed legacy matchmaking endpoints",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[\"Added offline mode\"],\"Improvements\":[\"Optimized network sync for co-op\"],\"Fixes\":[],\"Removals\":[\"Removed legacy matchmaking endpoints\"],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"8": {
+		"input": "- reworked how achievements are tracked\n- fixed broken texture on the main character\n- added new accessibility presets",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[\"Added new accessibility presets\"],\"Improvements\":[\"Reworked how achievements are tracked\"],\"Fixes\":[\"Fixed broken texture on the main character\"],\"Removals\":[],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"9": {
+		"input": "- updated daily rewards UI\n- reworked physics on moving platforms\n- fixed clipping issues in cutscenes",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[],\"Improvements\":[\"Updated daily rewards UI\", \"Reworked physics on moving platforms\"],\"Fixes\":[\"Fixed clipping issues in cutscenes\"],\"Removals\":[],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"10": {
+		"input": "- improved quest markers\n- added new companion dialogue\n- reworked XP curve across mid-game\n- removed outdated icons",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[\"Added new companion dialogue\"],\"Improvements\":[\"Improved quest markers\", \"Reworked XP curve across mid-game\"],\"Fixes\":[],\"Removals\":[\"Removed outdated icons\"],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"11": {
+		"input": "- fixed crash related to save corruption\n- reworked enemy spawn logic\n- updated boss fight animations",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[],\"Improvements\":[\"Reworked enemy spawn logic\", \"Updated boss fight animations\"],\"Fixes\":[\"Fixed crash related to save corruption\"],\"Removals\":[],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"12": {
+		"input": "- added new environment music\n- fixed jitter when sprinting\n- improved screen reader support\n- reworked procedural map generator",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[\"Added new environment music\"],\"Improvements\":[\"Improved screen reader support\", \"Reworked procedural map generator\"],\"Fixes\":[\"Fixed jitter when sprinting\"],\"Removals\":[],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"13": {
+		"input": "- optimized VR rendering pipeline\n- added custom keybinding profiles\n- tweaked spawn timers in hard mode",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[\"Added custom keybinding profiles\"],\"Improvements\":[\"Optimized VR rendering pipeline\", \"Tweaked spawn timers in hard mode\"],\"Fixes\":[],\"Removals\":[],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"14": {
+		"input": "- reworked UI theme system\n- fixed leaderboard desync\n- removed several unused UI components",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[],\"Improvements\":[\"Reworked UI theme system\"],\"Fixes\":[\"Fixed leaderboard desync\"],\"Removals\":[\"Removed several unused UI components\"],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	},
+	"15": {
+		"input": "- updated character creation options\n- reworked crafting balance values\n- added new weather patterns\n- fixed missing footsteps audio",
+		"output": "{\"title\":\"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\":[\"Added new weather patterns\"],\"Improvements\":[\"Updated character creation options\", \"Reworked crafting balance values\"],\"Fixes\":[\"Fixed missing footsteps audio\"],\"Removals\":[],\"Other\":[]},\"version_request\":{\"increment\": \"patch\"},\"date_request\":\"current_date\"}"
+	}
+}
