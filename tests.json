@@ -1,7 +1,7 @@
 {
 	"1": {
 		"input": "- added new leaderboard animations\n- fixed crash when opening settings",
-		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\":{\"Features\": [\"Added new leaderboard animations\"], \"Fixes\": [\"Fixed crash when opening settings\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}"
+		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Features\": [\"Added new leaderboard animations\"], \"Fixes\": [\"Fixed crash when opening settings\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}"
 	},
 	"2": {
 		"input": "- reworked the crafting interface\n- improved shader loading times\n- removed deprecated camera modes",
