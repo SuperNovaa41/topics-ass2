@@ -1,7 +1,7 @@
 {
 	"style": {
 		"title_format": "Patch Notes - v{{version}} ({{date}})",
-		"sections_order": ["Features", "Improvements", "Fixes", "Removals", "Security"],
+		"sections_order": ["Features", "Improvements", "Fixes", "Removals", "Security", "Other"],
 		"bullet_style": "- {{item}}",
 		"max_line_length": 150,
 		"tense": "present",
@@ -10,7 +10,7 @@
 	},
 	"classification_rules": {
 		"features": ["added", "new", "introduced", "implemented", "created"],
-		"improvements": ["improved", "enhanced", "made faster", "optimized", "refined"],
+		"improvements": ["improved", "enhanced", "made faster", "optimized", "refined", "updated", "updates", "update"],
 		"fixes": ["fixed", "resolved", "addressed", "corrected"],
 		"removals": ["removed", "deleted", "incompatible", "reworked", "will be removed", "deprecated"],
 		"security": ["vulnerability", "hardened", "permission issue", "xss", "csrf"]
