@@ -8,7 +8,7 @@ parser.add_argument("-i", "--iterations", required=False, default=1, type=int)
 
 args = parser.parse_args()
 
-with open("tests.json") as file:
+with open("tests/tests.json") as file:
     tests = json.load(file)
 
 model = patch_note()

@@ -1,4 +1,5 @@
 from patch_note import patch_note
+from tools.tagging import tagger
 import argparse
 import json
 
@@ -27,11 +28,15 @@ print("Generating patchnotes...")
 
 model = patch_note()
 out = model.get_response(prompt)
+json_out = json.loads(out)
 
-# insert tool call here
+tag = tagger()
+
+json_out["title"] = tag.tag(json_out["title"],
+                            json_out["version_request"]["increment"])
 
 with open(args.output, "w") as file:
-    json.dump(json.loads(out), file, indent=4)
+    json.dump(json_out, file, indent=4)
 
 print(f"Saved the following to {args.output}:")
-print(json.dumps(json.loads(out), indent=4))
+print(json.dumps(json_out, indent=4))
