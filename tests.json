@@ -9,7 +9,7 @@
 	},
 	"3": {
 		"input": "- optimized enemy AI pathfinding\n- added two new difficulty presets\n- reworked potion effects\n- fixed rare bug causing infinite loading screens",
-		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Features\": [\"Added two new difficulty presets\"], \"Improvements\": [\"Optimized enemy AI pathfinding\", \"Reworked potion effects\"], \"Fixes\": [\"Fixed rare bug cuasing infinite loading screens\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}"
+		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Features\": [\"Added two new difficulty presets\"], \"Improvements\": [\"Optimized enemy AI pathfinding\", \"Reworked potion effects\"], \"Fixes\": [\"Fixed rare bug causing infinite loading screens\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}"
 	},
 	"4": {
 		"input": "- updated localization files for French\n- reworked tutorial level flow",
@@ -53,7 +53,7 @@
 	},
 	"14": {
 		"input": "- reworked UI theme system\n- fixed leaderboard desync\n- removed several unused UI components",
-		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Improvements\": [\"Reworked UI theme system\"], \"Fixes\":,[\"Fixed leaderboard desync\"], \"Removals\": [\"Removed several unused UI components\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}"
+		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Improvements\": [\"Reworked UI theme system\"], \"Fixes\": [\"Fixed leaderboard desync\"], \"Removals\": [\"Removed several unused UI components\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}"
 	},
 	"15": {
 		"input": "- updated character creation options\n- reworked crafting balance values\n- added new weather patterns\n- fixed missing footsteps audio",
