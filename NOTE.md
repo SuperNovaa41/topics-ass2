@@ -1,6 +1,6 @@
 TECH NOTE: Patch-Note Generation System
 ---------------------------------------
-
+```
           SYSTEM ARCHITECTURE
 
           +-----------------+
@@ -31,8 +31,9 @@ TECH NOTE: Patch-Note Generation System
                             v
                   +-------------------+
                   |    JSON Output    |
-                  | parsed\_notes.json |
+                  | parsed_notes.json |
                   +-------------------+
+```
 
 PROMPT GUARDRAILS
 - Always output valid JSON matching the defined schema
