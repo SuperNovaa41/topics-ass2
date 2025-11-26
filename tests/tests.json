@@ -8,8 +8,8 @@
 		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Improvements\": [\"Reworked the crafting interface\", \"Improved shader loading times\"], \"Removals\": [\"Removed deprecated camera modes\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}"
 	},
 	"3": {
-		"input": "- optimized enemy AI pathfinding\n- added two new difficulty presets\n- reworked potion effects\n- fixed rare bug causing infinite loading screens",
-		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Features\": [\"Added two new difficulty presets\"], \"Improvements\": [\"Optimized enemy AI pathfinding\", \"Reworked potion effects\"], \"Fixes\": [\"Fixed rare bug causing infinite loading screens\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}"
+		"input": "INCREMENT MAJOR UPDATE\n- optimized enemy AI pathfinding\n- added two new difficulty presets\n- reworked potion effects\n- fixed rare bug causing infinite loading screens",
+		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Features\": [\"Added two new difficulty presets\"], \"Improvements\": [\"Optimized enemy AI pathfinding\", \"Reworked potion effects\"], \"Fixes\": [\"Fixed rare bug causing infinite loading screens\"]}, \"version_request\": {\"increment\": \"major\"}, \"date_request\": \"current_date\"}"
 	},
 	"4": {
 		"input": "- updated localization files for French\n- reworked tutorial level flow",
@@ -36,8 +36,8 @@
 		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Improvements\": [\"Updated daily rewards UI\", \"Reworked physics on moving platforms\"], \"Fixes\": [\"Fixed clipping issues in cutscenes\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}"
 	},
 	"10": {
-		"input": "- improved quest markers\n- added new companion dialogue\n- reworked XP curve across mid-game\n- removed outdated icons",
-		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Features\": [\"Added new companion dialogue\"], \"Improvements\": [\"Improved quest markers\", \"Reworked XP curve across mid-game\"], \"Removals\": [\"Removed outdated icons\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}"
+		"input": "INCREMENT MINOR UPDATE\n- improved quest markers\n- added new companion dialogue\n- reworked XP curve across mid-game\n- removed outdated icons",
+		"output": "{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Features\": [\"Added new companion dialogue\"], \"Improvements\": [\"Improved quest markers\", \"Reworked XP curve across mid-game\"], \"Removals\": [\"Removed outdated icons\"]}, \"version_request\": {\"increment\": \"minor\"}, \"date_request\": \"current_date\"}"
 	},
 	"11": {
 		"input": "- fixed crash related to save corruption\n- reworked enemy spawn logic\n- updated boss fight animations",

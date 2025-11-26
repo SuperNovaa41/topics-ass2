@@ -30,7 +30,7 @@ for i in range(int(args.iterations)):
             print(f"GENERATED: {parsed_out}")
             print(f"TEST: {value["output"]}")
 
-        print(f"Test #{tests_ran}: ", end="")
+        print(f"Test #{tests_ran + 1}: ", end="")
         if parsed_out != value["output"]:
             print("FAIL!")
             tests_failed += 1
