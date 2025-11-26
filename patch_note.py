@@ -4,10 +4,15 @@ import json
 
 class patch_note:
     def __init__(self):
-        self.model = "llama3.1:8b"
+        #self.model = "llama3.1:8b"
+        self.model = "qwen2.5:7b"
 
         with open("rules.json") as f:
             sys_rules = json.load(f)
+
+        good_ex = json.loads("{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Features\": [\"Added new leaderboard animations\"], \"Fixes\": [\"Fixed crash when opening settings\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}")
+        bad_ex = json.loads("{\"title\": \"Patch Notes - v1.0 (current_date)\", \"sections\": {\"Features\": [\"Reworked the item rarity system\"], \"Improvements\": [\"Improved keyboard navigation in menus\", \"Tweaked fog density in mountains\"], \"Fixes\": [\"Fixed double-jump exploit\"], \"Other\": [\"Added missing sound effects to combat\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}")
+        corrected_ex = json.loads("{\"title\": \"Patch Notes - v{{version}} ({{date}})\", \"sections\": {\"Features\": [\"Added missing sound effects to combat\"], \"Improvements\": [\"Reworked item rarity system\", \"Improved keyboard navigation in menus\", \"Tweaked fog density in mountains\"], \"Fixes\": [\"Fixed double-jump exploit\"]}, \"version_request\": {\"increment\": \"patch\"}, \"date_request\": \"current_date\"}")
 
 
         self.sys_prompt = f"""
@@ -22,13 +27,37 @@ class patch_note:
         If any bullet is missing, the answer is invalid — regenerate.
 
 
+        Here are some examples:
+
+        GOOD:
+        Input:- added new leaderboard animations\n- fixed crash when opening settings
+        Output: {json.dumps(good_ex)}
+        BAD:
+        Input:- reworked item rarity system\n- added missing sound effects to combat\n- improved keyboard navigation in menus\n- tweaked fog density in mountains\n- fixed double-jump exploit
+        Output: {json.dumps(bad_ex)}
+        Corrected: {json.dumps(corrected_ex)}
+
+
+
         YOU MUST INCLUDE EVERY USER BULLET EXACTLY ONCE.
 
         Do NOT drop any bullet.
         Do NOT merge bullets.
         Do NOT rewrite bullets beyond making them concise.
-        If unsure where to classify something, put it under the closest section.
-        If a bullet does not fit any section, place it under "Other".
+        DO NOT REWRITE BULLETS BEYOND MAKING THEM CONCISE.
+
+        Make sure that if the example word matches one listed in classification rules, that it uses that exact section. YOU CONTINUE TO MISS THESE, ENSURE YOU DO IT CORRECTLY.
+
+        DROP THE "-" ON THE OUTPUT.
+
+        Version increment should always be patch, unless otherwise specified.
+
+        Capitilize only the first letter of the first word of each sentence.
+        Do not place periods at the end of sentences.
+        DO NOT. PLACE PERIODS.
+
+        If there are periods located in the sentence, the answer is invalid - regenerate.
+
 
 
         YOU MUST FOLLOW THESE OUTPUT RULES:
@@ -55,9 +84,11 @@ class patch_note:
             "date_request": "current_date"
         }}
 
-        If a section has no entries, use an empty list.
         NEVER hallucinate version numbers or dates.
         NEVER output anything before or after the JSON.
+
+
+        After following all of these rules, evaluate the output. If it does not strictly follow all of the rules above, regenerate.
         """
 
 

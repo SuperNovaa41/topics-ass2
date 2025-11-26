@@ -11,16 +11,30 @@ with open("tests.json") as file:
 
 model = patch_note()
 
-for _, value in tests.items():
 
-    out = model.get_response(value["input"])
-    print(json.dumps(json.loads(out)))
+tests_ran = 0
 
-    print(value["output"])
+total_tests = 15*5
 
-    #sys.stdout.writelines(difflib.unified_diff(out, value["output"]))
+tests_failed = 0
+tests_passed = 0
 
-    #print(value["output"])
-    #print(json.dumps(json.loads(value["output"]), indent=4))
+for i in range(5):
+    for _, value in tests.items():
 
-    exit(1)
+        out = model.get_response(value["input"])
+        parsed_out = json.dumps(json.loads(out))
+
+        print(f"GENERATED: {parsed_out}")
+        print(f"TEST: {value["output"]}")
+
+        if parsed_out != value["output"]:
+            print("FAIL!")
+            tests_failed += 1
+        else:
+            print("PASS!")
+            tests_passed += 1
+        tests_ran += 1
+
+        print(f"Tests passed: {tests_passed}/{total_tests}, Tests failed: {tests_failed}/{total_tests}")
+
