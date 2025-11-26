@@ -17,17 +17,17 @@ You must ALWAYS capitalize the first letter of each bullet and lowercase the res
 schema = """
 The JSON you output MUST match this structure exactly, except in cases where sections are missing items:
 
-{{
-    "title": "Patch Notes - v{{{{version}}}} ({{{{date}}}})",
-    "sections": {{
+{
+    "title": "Patch Notes - v{{version}} ({{date}})",
+    "sections": {
         "Features": ["string"],
         "Improvements": ["string"],
         "Fixes": ["string"],
         "Removals": ["string"],
         "Security": ["string"],
         "Other": ["string"]
-    }},
-    "version_request": {{"increment": "path|minor|major"}},
+    },
+    "version_request": {"increment": "patch|minor|major"},
     "date_request": "current_date"
 }}
 

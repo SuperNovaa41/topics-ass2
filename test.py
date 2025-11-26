@@ -1,11 +1,10 @@
 import json
 from patch_note import patch_note
-import sys
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-v", "--verbose", required=False, default=False)
-parser.add_argument("-i", "--iterations", required=False, default=1)
+parser.add_argument("-v", "--verbose", required=False, action=argparse.BooleanOptionalAction)
+parser.add_argument("-i", "--iterations", required=False, default=1, type=int)
 
 args = parser.parse_args()
 
