@@ -21,20 +21,16 @@ def increment_ver(inc: str) -> str:
 
     vers = v.split(".")
 
-    print(vers)
-
     if inc == "major":
         vers[0] = str(int(vers[0]) + 1)
     elif inc == "minor":
         vers[1] = str(int(vers[1]) + 1)
     else:
         vers[2] = str(int(vers[2]) + 1)
-    print(vers)
 
     v_str = f"{vers[0]}.{vers[1]}.{vers[2]}"
     with open("current_version", "w") as file:
         file.write(v_str)
-    print(v_str)
 
     return v_str
 
