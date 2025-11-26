@@ -1,4 +1,8 @@
 from ollama import chat
+import time
+from datetime import datetime
+from pathlib import Path
+
 
 prompt = """
 You are a strict patch-note generator.
@@ -68,6 +72,13 @@ TASK:
 """
 
 
+def log(prompt: str, time: int, output: str):
+    current_dt = datetime.now()
+    Path("logs").mkdir(parents=True, exist_ok=True)
+    with open(f"logs/{current_dt.strftime("%d-%m-%Y-%H:%M:%S")}.log", "w") as file:
+        file.write(f"{current_dt.strftime("%d-%m-%Y %H:%M:%S")}\nReceived input:\n{prompt}\n\n Generated:\n{output} \nin {time:.4f}s")
+
+
 class patch_note:
     def __init__(self):
         self.model = "gpt-oss:120b-cloud"
@@ -82,7 +93,7 @@ class patch_note:
             inp = input("Continue? (y/N) ")
             if inp.lower() != "y" and inp.lower() != "yes":
                 exit(1)
-
+        start_time = time.time()
         response = chat(
             model=self.model,
             messages=[
@@ -91,6 +102,10 @@ class patch_note:
                     f"{self.schema}\n{self.task}\n{prompt}"}
             ]
         )
+        end_time = time.time()
+        latency = end_time - start_time
         out = response.message['content']
+
+        log(prompt, latency, out)
 
         return out[out.find('{'):]
